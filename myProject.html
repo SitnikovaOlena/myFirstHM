@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This would be my first project</title>
+    <!--    <script>-->
+
+    <!--        function changeColor() {-->
+    <!--        let myButton = document.querySelector("button");-->
+    <!--            if(myButton.style.backgroundColor === 'blue'){-->
+    <!--                myButton.style.backgroundColor = 'red'-->
+    <!--            }-->
+    <!--            myButton.style.backgroundColor = 'blue'-->
+    <!--        }-->
+    <!--        // myButton.onclick = changeColor();-->
+    <!--        // myButton.onclick = myButton.innerHTML = 'red';-->
+    <!--    </script>-->
+    <script>
+        let myButton;
+
+        function changeColor() {
+            if (myButton.style.backgroundColor === 'blue') {
+                myButton.style.backgroundColor = 'red'
+            } else {
+                myButton.style.backgroundColor = 'blue'
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', (event) => {
+            myButton = document.querySelector("button");
+            myButton.addEventListener('click', changeColor);
+        });
+
+        // myButton.onclick = changeColor();
+        // myButton.onclick = myButton.innerHTML = 'red';
+    </script>
+</head>
+<body>
+<h1>So what to do next?</h1>
+<h2>Lets create small presentation for Alex of what I've already learned!</h2>
+<button id="button">Next Step</button>
+
+
+</body>
+</html>
